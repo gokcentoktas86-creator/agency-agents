@@ -1,0 +1,556 @@
+{
+  "_note": "Department activity records for the Master Agent system. The Master Agent appends an activity entry to the responsible department's log after every completed task. This powers fast recall — 'what did sales do last week?' is one read away. Each department tracks its agents, responsibilities, activity log, last activity, and metrics. Read by the Master Agent at session start; appended after every task.",
+  "version": "1.0",
+  "updated": "2026-11-10",
+  "departments": {
+    "operations": {
+      "label": "Operations",
+      "agents": [
+        "master-agent",
+        "email-ops",
+        "accounting-ops",
+        "sales-ops",
+        "appointment-ops",
+        "presentation-ops"
+      ],
+      "responsibilities": "Daily operations — email, pricing, offers, accounting, sales prospecting, appointments, presentations",
+      "activity_log": [
+        {
+          "timestamp": "2026-11-09T12:43:50",
+          "task": "sunum dosyası hazırla",
+          "result": "Presentation prepared: /home/user/agency-agents/operations/output/presentation-2026-11-09.html"
+        },
+        {
+          "timestamp": "2026-11-09T12:43:50",
+          "task": "bu alanda şirketler bul",
+          "result": "4 company(ies) found. Qualification scores assigned."
+        },
+        {
+          "timestamp": "2026-11-09T12:49:19",
+          "task": "gelen mailleimi kontrol et",
+          "result": "Inbox: 5 emails, 5 unread. 4 draft replies prepared."
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "program yaz",
+          "result": "Routed to Bilgi Teknolojisi & Yazılım Master. 5 helper agents available: Backend Developer, Frontend Developer, DevOps Engineer, Data Engineer, Security Engineer. IT Master — coordinates development, deployment, infrastructure, and support"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "avukat danış",
+          "result": "Routed to Hukuk & Adalet Master. 5 helper agents available: Case Manager, Legal Researcher, Document Specialist, Compliance Officer, Forensic Specialist. Legal Master — coordinates case management, documentation, compliance, and legal research"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "haber yaz",
+          "result": "Routed to Medya & Sanat Master. 5 helper agents available: Content Creator, Editor, Designer, Video/Audio Specialist, Marketing & Distribution. Media Master — coordinates content creation, editing, publishing, and distribution"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "logo tasarla",
+          "result": "Command does not match any profession category. Available categories: Bilgi Teknolojisi & Yazılım, Finans & Muhasebe, Sağlık & Tıbbi, Hukuk & Adalet, Eğitim & Eğitim, Medya & Sanat, İş & Yönetim, Mühendislik & Teknik, Araştırma & Bilim, Tasarım & Mimarlık"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "elektrik mühendisliği",
+          "result": "Routed to Mühendislik & Teknik Master. 5 helper agents available: Design Engineer, Analysis Engineer, Test Engineer, Maintenance Technician, Project Engineer. Engineering Master — coordinates design, analysis, testing, and maintenance"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "araştırma yap",
+          "result": "Routed to Araştırma & Bilim Master. 5 helper agents available: Data Scientist, Laboratory Researcher, Publication Specialist, Grant Writer, Field Researcher. Research Master — coordinates experiments, data analysis, publications, and grants"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "ders planı yap",
+          "result": "Routed to Mühendislik & Teknik Master. 5 helper agents available: Design Engineer, Analysis Engineer, Test Engineer, Maintenance Technician, Project Engineer. Engineering Master — coordinates design, analysis, testing, and maintenance"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "iş planı oluştur",
+          "result": "Routed to Mühendislik & Teknik Master. 5 helper agents available: Design Engineer, Analysis Engineer, Test Engineer, Maintenance Technician, Project Engineer. Engineering Master — coordinates design, analysis, testing, and maintenance"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "banka transferi",
+          "result": "Command does not match any profession category. Available categories: Bilgi Teknolojisi & Yazılım, Finans & Muhasebe, Sağlık & Tıbbi, Hukuk & Adalet, Eğitim & Eğitim, Medya & Sanat, İş & Yönetim, Mühendislik & Teknik, Araştırma & Bilim, Tasarım & Mimarlık"
+        },
+        {
+          "timestamp": "2026-11-09T14:28:54",
+          "task": "doktor randevusu",
+          "result": "Today (2026-11-09): 3 appointment(s). 1 tentative need confirmation."
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "program yaz",
+          "result": "Routed to Bilgi Teknolojisi & Yazılım Master. 5 helper agents available: Backend Developer, Frontend Developer, DevOps Engineer, Data Engineer, Security Engineer. IT Master — coordinates development, deployment, infrastructure, and support"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "avukat danış",
+          "result": "Routed to Hukuk & Adalet Master. 5 helper agents available: Case Manager, Legal Researcher, Document Specialist, Compliance Officer, Forensic Specialist. Legal Master — coordinates case management, documentation, compliance, and legal research"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "haber yaz",
+          "result": "Routed to Medya & Sanat Master. 5 helper agents available: Content Creator, Editor, Designer, Video/Audio Specialist, Marketing & Distribution. Media Master — coordinates content creation, editing, publishing, and distribution"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "logo tasarla",
+          "result": "Routed to Tasarım & Mimarlık Master. 5 helper agents available: Visual Designer, UX/UI Designer, Architect, Drafting Specialist, Client Presentation Specialist. Design Master — coordinates visual design, prototypes, specifications, and client presentations"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "elektrik mühendisliği",
+          "result": "Routed to Mühendislik & Teknik Master. 5 helper agents available: Design Engineer, Analysis Engineer, Test Engineer, Maintenance Technician, Project Engineer. Engineering Master — coordinates design, analysis, testing, and maintenance"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "araştırma yap",
+          "result": "Routed to Araştırma & Bilim Master. 5 helper agents available: Data Scientist, Laboratory Researcher, Publication Specialist, Grant Writer, Field Researcher. Research Master — coordinates experiments, data analysis, publications, and grants"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "ders planı yap",
+          "result": "Routed to Eğitim & Eğitim Master. 5 helper agents available: Curriculum Designer, Grading & Records Specialist, Assessment Specialist, Student Support Specialist, Research & Publication Specialist. Education Master — coordinates curriculum, grading, student records, and lesson planning"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "iş planı oluştur",
+          "result": "Routed to İş & Yönetim Master. 5 helper agents available: Operations Manager, HR Specialist, Strategy Consultant, Compliance Officer, Customer Success. Business Master — coordinates operations, strategy, HR, and compliance"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "banka transferi",
+          "result": "Routed to Finans & Muhasebe Master. 5 helper agents available: Accountant, Financial Analyst, Tax Specialist, Auditor, Banking/Investment Specialist. Finance Master — coordinates accounting, banking, analysis, tax, and audit"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "doktor randevusu",
+          "result": "Today (2026-11-09): 3 appointment(s). 1 tentative need confirmation."
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "kod test et",
+          "result": "Routed to Bilgi Teknolojisi & Yazılım Master. 5 helper agents available: Backend Developer, Frontend Developer, DevOps Engineer, Data Engineer, Security Engineer. IT Master — coordinates development, deployment, infrastructure, and support"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "fatura hazırla",
+          "result": "3 documents checked, 1 flagged. Monthly statement prepared."
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "sunum hazırla",
+          "result": "Presentation prepared: /home/user/agency-agents/operations/output/presentation-2026-11-09.html"
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "mail kontrol et",
+          "result": "Inbox: 5 emails, 5 unread. 4 draft replies prepared."
+        },
+        {
+          "timestamp": "2026-11-09T14:30:24",
+          "task": "şirket bul",
+          "result": "4 company(ies) found. Qualification scores assigned."
+        },
+        {
+          "timestamp": "2026-11-10T06:00:25",
+          "task": "program yaz",
+          "result": "Routed to Bilgi Teknolojisi & Yazılım Master. 5 helper agents available: Backend Developer, Frontend Developer, DevOps Engineer, Data Engineer, Security Engineer. IT Master — coordinates development, deployment, infrastructure, and support"
+        },
+        {
+          "timestamp": "2026-11-10T06:00:57",
+          "task": "program yaz",
+          "result": "Routed to Bilgi Teknolojisi & Yazılım Master. 5 helper agents available: Backend Developer, Frontend Developer, DevOps Engineer, Data Engineer, Security Engineer. IT Master — coordinates development, deployment, infrastructure, and support"
+        },
+        {
+          "timestamp": "2026-11-10T06:00:57",
+          "task": "haber yaz",
+          "result": "Routed to Medya & Sanat Master. 5 helper agents available: Content Creator, Editor, Designer, Video/Audio Specialist, Marketing & Distribution. Media Master — coordinates content creation, editing, publishing, and distribution"
+        },
+        {
+          "timestamp": "2026-11-10T06:00:57",
+          "task": "avukat danış",
+          "result": "Routed to Hukuk & Adalet Master. 5 helper agents available: Case Manager, Legal Researcher, Document Specialist, Compliance Officer, Forensic Specialist. Legal Master — coordinates case management, documentation, compliance, and legal research"
+        },
+        {
+          "timestamp": "2026-11-10T06:00:57",
+          "task": "logo tasarla",
+          "result": "Routed to Tasarım & Mimarlık Master. 5 helper agents available: Visual Designer, UX/UI Designer, Architect, Drafting Specialist, Client Presentation Specialist. Design Master — coordinates visual design, prototypes, specifications, and client presentations"
+        },
+        {
+          "timestamp": "2026-11-10T06:01:55",
+          "task": "program yaz",
+          "result": "Routed to Bilgi Teknolojisi & Yazılım Master. 5 helper agents available: Backend Developer, Frontend Developer, DevOps Engineer, Data Engineer, Security Engineer. IT Master — coordinates development, deployment, infrastructure, and support"
+        },
+        {
+          "timestamp": "2026-11-10T06:01:55",
+          "task": "avukat danış",
+          "result": "Routed to Hukuk & Adalet Master. 5 helper agents available: Case Manager, Legal Researcher, Document Specialist, Compliance Officer, Forensic Specialist. Legal Master — coordinates case management, documentation, compliance, and legal research"
+        },
+        {
+          "timestamp": "2026-11-10T06:01:55",
+          "task": "logo tasarla",
+          "result": "Routed to Tasarım & Mimarlık Master. 5 helper agents available: Visual Designer, UX/UI Designer, Architect, Drafting Specialist, Client Presentation Specialist. Design Master — coordinates visual design, prototypes, specifications, and client presentations"
+        },
+        {
+          "timestamp": "2026-11-10T06:01:55",
+          "task": "elektrik mühendisliği",
+          "result": "Routed to Mühendislik & Teknik Master. 5 helper agents available: Design Engineer, Analysis Engineer, Test Engineer, Maintenance Technician, Project Engineer. Engineering Master — coordinates design, analysis, testing, and maintenance"
+        }
+      ],
+      "last_activity": "2026-11-10T06:01:55",
+      "metrics": {
+        "tasks_completed": 37,
+        "skills_used": 37
+      }
+    },
+    "sales": {
+      "label": "Sales",
+      "agents": [
+        "sales-account-strategist",
+        "sales-coach",
+        "sales-deal-strategist",
+        "sales-discovery-coach",
+        "sales-engineer",
+        "sales-offer-lead-gen-strategist",
+        "sales-outbound-strategist",
+        "sales-pipeline-analyst",
+        "sales-proposal-strategist"
+      ],
+      "responsibilities": "Pipeline, accounts, proposals, forecasting, coaching",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "finance": {
+      "label": "Finance",
+      "agents": [
+        "finance-bookkeeper-controller",
+        "finance-financial-analyst",
+        "finance-fpa-analyst",
+        "finance-investment-researcher",
+        "finance-tax-strategist"
+      ],
+      "responsibilities": "Bookkeeping, financial analysis, planning, tax",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "support": {
+      "label": "Support",
+      "agents": [
+        "support-analytics-reporter",
+        "support-executive-summary-generator",
+        "support-finance-tracker",
+        "support-infrastructure-maintainer",
+        "support-legal-compliance-checker",
+        "support-support-responder"
+      ],
+      "responsibilities": "Customer support, analytics, compliance",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "marketing": {
+      "label": "Marketing",
+      "agents": [
+        "marketing-content-creator",
+        "marketing-email-strategist",
+        "marketing-social-media-strategist",
+        "marketing-growth-hacker"
+      ],
+      "responsibilities": "Content, email marketing, social media, growth",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "project-management": {
+      "label": "Project Management",
+      "agents": [
+        "project-manager-senior",
+        "project-management-project-shepherd",
+        "project-management-meeting-notes-specialist",
+        "project-management-studio-producer",
+        "project-management-studio-operations"
+      ],
+      "responsibilities": "Project planning, tracking, meetings, studio operations",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "product": {
+      "label": "Product",
+      "agents": [
+        "product-manager",
+        "product-sprint-prioritizer",
+        "product-feedback-synthesizer",
+        "product-trend-researcher",
+        "product-dx-engineer"
+      ],
+      "responsibilities": "Product management, prioritization, feedback, DX",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "engineering": {
+      "label": "Engineering",
+      "agents": [
+        "engineering-backend-architect",
+        "engineering-frontend-developer",
+        "engineering-devops-automator",
+        "engineering-code-reviewer",
+        "engineering-data-engineer"
+      ],
+      "responsibilities": "Backend, frontend, DevOps, code review, data",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "design": {
+      "label": "Design",
+      "agents": [
+        "design-ux-architect",
+        "design-ui-designer",
+        "design-brand-guardian",
+        "design-visual-storyteller"
+      ],
+      "responsibilities": "UX, UI, brand, visual storytelling",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "specialized": {
+      "label": "Specialized",
+      "agents": [
+        "agents-orchestrator",
+        "business-strategist",
+        "chief-financial-officer",
+        "customer-success-manager"
+      ],
+      "responsibilities": "Orchestration, strategy, CFO, customer success",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "it-software": {
+      "label": "IT & Software",
+      "agents": [
+        "it-master",
+        "backend-developer",
+        "frontend-developer",
+        "devops-engineer",
+        "data-engineer",
+        "security-engineer"
+      ],
+      "responsibilities": "All IT and software professions — development, infrastructure, databases, security",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "finance-accounting": {
+      "label": "Finance & Accounting",
+      "agents": [
+        "finance-master",
+        "accountant",
+        "financial-analyst",
+        "tax-specialist",
+        "auditor",
+        "banking-specialist"
+      ],
+      "responsibilities": "All finance and accounting professions — bookkeeping, analysis, tax, audit, banking",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "healthcare-medical": {
+      "label": "Healthcare & Medical",
+      "agents": [
+        "healthcare-master",
+        "medical-records-specialist",
+        "laboratory-technician",
+        "pharmacist",
+        "medical-imaging-technician",
+        "healthcare-admin"
+      ],
+      "responsibilities": "All healthcare and medical professions — patient records, lab, prescriptions, imaging, clinic ops",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "legal-justice": {
+      "label": "Legal & Justice",
+      "agents": [
+        "legal-master",
+        "case-manager",
+        "legal-researcher",
+        "document-specialist",
+        "compliance-officer",
+        "forensic-specialist"
+      ],
+      "responsibilities": "All legal and justice professions — case management, research, documents, compliance, forensics",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "education-training": {
+      "label": "Education & Training",
+      "agents": [
+        "education-master",
+        "curriculum-designer",
+        "grading-specialist",
+        "assessment-specialist",
+        "student-support-specialist",
+        "research-specialist"
+      ],
+      "responsibilities": "All education and training professions — curriculum, grading, assessment, student support, research",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "media-creative": {
+      "label": "Media & Creative",
+      "agents": [
+        "media-master",
+        "content-creator",
+        "editor",
+        "designer",
+        "video-audio-specialist",
+        "marketing-specialist"
+      ],
+      "responsibilities": "All media and creative professions — content, editing, design, video/audio, marketing",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "business-management": {
+      "label": "Business & Management",
+      "agents": [
+        "business-master",
+        "operations-manager",
+        "hr-specialist",
+        "strategy-consultant",
+        "compliance-officer",
+        "customer-success"
+      ],
+      "responsibilities": "All business and management professions — operations, HR, strategy, compliance, customer success",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "engineering-technical": {
+      "label": "Engineering & Technical",
+      "agents": [
+        "engineering-master",
+        "design-engineer",
+        "analysis-engineer",
+        "test-engineer",
+        "maintenance-technician",
+        "project-engineer"
+      ],
+      "responsibilities": "All engineering and technical professions — design, analysis, testing, maintenance, projects",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "research-science": {
+      "label": "Research & Science",
+      "agents": [
+        "research-master",
+        "literature-researcher",
+        "data-analyst",
+        "publication-specialist",
+        "grant-writer",
+        "experiment-coordinator"
+      ],
+      "responsibilities": "All research and science professions — literature, analysis, publications, grants, experiments",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    },
+    "design-architecture": {
+      "label": "Design & Architecture",
+      "agents": [
+        "design-master",
+        "visual-designer",
+        "ux-ui-designer",
+        "3d-modeler",
+        "drafting-specialist",
+        "design-pm"
+      ],
+      "responsibilities": "All design and architecture professions — visual design, UX/UI, 3D, drafting, project management",
+      "category_type": "profession",
+      "activity_log": [],
+      "last_activity": null,
+      "metrics": {
+        "tasks_completed": 0,
+        "skills_used": 0
+      }
+    }
+  }
+}

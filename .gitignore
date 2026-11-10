@@ -57,6 +57,9 @@ dist/
 build/
 *.egg-info/
 
+# Master Agent bridge outputs (generated at runtime)
+operations/output/
+
 # Personal notes and scratch files
 scratch/
 notes/

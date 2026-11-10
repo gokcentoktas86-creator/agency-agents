@@ -1,0 +1,53 @@
+{
+  "_note": "Sales prospects stub for the phone bridge. In production, this is replaced by a real research API (web search/LinkedIn/company databases). The bridge reads this for company research tasks and appends new prospects here. Each entry has: id, name, industry, location, size, contact_name, contact_email, qualification (hot/warm/cold), score, notes.",
+  "companies": [
+    {
+      "id": "co-001",
+      "name": "Anadolu Lojistik",
+      "industry": "Lojistik",
+      "location": "İzmir",
+      "size": "50-100 çalışan",
+      "contact_name": "Emre Aydın",
+      "contact_email": "emre.aydin@anadolu-lojistik.com",
+      "qualification": "hot",
+      "score": 92,
+      "notes": "Warehouse management needs — direct fit"
+    },
+    {
+      "id": "co-002",
+      "name": "Ege Teknoloji",
+      "industry": "Teknoloji",
+      "location": "İzmir",
+      "size": "20-50 çalışan",
+      "contact_name": "Zeynep Çelik",
+      "contact_email": "zeynep.celik@egeteknoloji.com",
+      "qualification": "warm",
+      "score": 68,
+      "notes": "Cloud migration project in progress"
+    },
+    {
+      "id": "co-003",
+      "name": "Marmara Üretim",
+      "industry": "Üretim",
+      "location": "Manisa",
+      "size": "100+ çalışan",
+      "contact_name": "Hasan Bulut",
+      "contact_email": "hasan.bulut@marmarauretim.com",
+      "qualification": "warm",
+      "score": 71,
+      "notes": "ERP system upgrade planned next quarter"
+    },
+    {
+      "id": "co-004",
+      "name": "Geçmişler Holding",
+      "industry": "Holding",
+      "location": "İstanbul",
+      "size": "500+ çalışan",
+      "contact_name": "Elif Şahin",
+      "contact_email": "elif.sahin@gecmislerholding.com",
+      "qualification": "cold",
+      "score": 41,
+      "notes": "Large but complex decision chain"
+    }
+  ]
+}

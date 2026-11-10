@@ -240,6 +240,44 @@ Turning pipeline into revenue through craft, not CRM busywork.
 | 🎯 [Sales Outreach](specialized/sales-outreach.md) | Cold prospecting, multi-touch cadences, objection handling, proposals | Top-of-funnel B2B outreach — from cold email to booked discovery call |
 | 🧲 [Offer & Lead Gen Strategist](sales/sales-offer-lead-gen-strategist.md) | Offers & lead magnets | Top-of-funnel offer construction and lead gen |
 
+### 👑 Operations Division
+
+The Master Agent system — one front door for every department. Receives commands from phone or computer, routes work to sub-agents across all divisions, manages the evolving skills database and department activity records, and learns from every completed task.
+
+| Agent | Specialty | When to Use |
+|-------|-----------|-------------|
+| 👑 [Master Agent](operations/operations-master-agent.md) | Central coordinator — routes commands, manages skills database, department records, and memory | Any command from phone or computer — the single entry point |
+| 📧 [Email Ops](operations/operations-email-ops-agent.md) | Inbox triage, email replies, price quotes, offer intake | "Check my emails", "give prices", "receive offers" |
+| 📒 [Accounting Ops](operations/operations-accounting-ops-agent.md) | Accounting document checks, monthly statements, financial verification | "Check accounting documents", "prepare monthly statement" |
+| 🎯 [Sales Ops](operations/operations-sales-ops-agent.md) | Company research, lead qualification, appointment scheduling | "Find companies to sell to", "schedule appointments" |
+| 📅 [Appointment Ops](operations/operations-appointment-ops-agent.md) | Appointment checking, scheduling, calendar organization | "Check my appointments", "organize the calendar" |
+| 📊 [Presentation Ops](operations/operations-presentation-ops-agent.md) | Presentation preparation — data in, story out | "Prepare a presentation file" |
+
+**Phone Bridge** — `operations/phone-bridge.py` receives commands from phone (Telegram/WhatsApp/Flutter app) via HTTP, routes to sub-agents, executes on computer, and returns results. After every task, updates `skills.json`, `department-records.json`, and daily memory — so the system gets smarter with every interaction.
+
+**Phone App** — `operations/mobile-app/` is a Flutter app for sending commands from phone.
+
+### 🌐 Profession Routing System
+
+The Master Agent covers **all 764 professions** from the Turkish Wikipedia "Meslekler listesi". **152 computer-based professions** are organized into **10 categories**, each with its own master + 5 helper agents.
+
+| Category | Master Agent | Professions | Covers |
+|---|---|---|---|
+| 💻 IT & Software | IT Master | 14 | Bilgisayar mühendisi, Bilgisayar programcısı, Yazılım mühendisi, Ağ yöneticisi, Veritabanı yöneticisi |
+| 💰 Finance & Accounting | Finance Master | 30 | Muhasebeci, Ekonomist, Vergi denetmeni, Bankacı, Fon yöneticisi, Sigortacı |
+| ⚕️ Healthcare & Medical | Healthcare Master | 40 | Doktor, Aile hekimi, Eczacı, Radyolog, Laborant, Hemşire, Diyetisyen |
+| ⚖️ Legal & Justice | Legal Master | 15 | Avukat, Hakim, Savcı, Adli tabip, Dedektif, Müfettiş |
+| 📚 Education & Training | Education Master | 19 | Öğretmen, Eğitmen, Akademisyen, Profesör, Danışman, Çevirmen |
+| 🎬 Media & Creative | Media Master | 37 | Gazeteci, Yazar, Editör, Video editörü, Reklamcı, Spiker |
+| 🏢 Business & Management | Business Master | 32 | Menajer, Müdür, Yönetici, HR uzmanı, Danışman, Satış elemanı |
+| 🔧 Engineering & Technical | Engineering Master | 56 | Mühendis, Elektrik mühendisi, Makine mühendisi, Kimya mühendisi, Jeolog |
+| 🔬 Research & Science | Research Master | 35 | Akademisyen, Bilim insanı, Araştırmacı, Kimyager, Biyolog, İstatistikçi |
+| 🎨 Design & Architecture | Design Master | 17 | Tasarımcı, Mimar, İç mimar, Şehir plancısı, Grafik tasarımcı, Animator |
+
+**Professions database** — `operations/professions.json` contains all 764 professions with 10 categories, each with master patterns and 5 helper roles. The phone bridge routes commands to the correct profession category automatically.
+
+**Design doc** — [strategy/professions-system.md](strategy/professions-system.md)
+
 ### 📢 Marketing Division
 
 Growing your audience, one authentic interaction at a time.

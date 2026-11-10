@@ -1,0 +1,49 @@
+{
+  "_note": "Calendar stub for the phone bridge. In production, this is replaced by a real calendar API (Google Calendar/Exchange/etc). The bridge reads this for appointment checks and writes new appointments here. Each entry has: id, title, date, start_time, end_time, location, attendees, status (confirmed/tentative/cancelled), notes.",
+  "appointments": [
+    {
+      "id": "appt-001",
+      "title": "Ahmet Yılmaz — Fiyat görüşme",
+      "date": "2026-11-09",
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "location": "Ofis",
+      "attendees": ["Ahmet Yılmaz"],
+      "status": "confirmed",
+      "notes": "50 adet ofis malzemesi fiyat teklifi"
+    },
+    {
+      "id": "appt-002",
+      "title": "Fatma Demir — Tedarik zinciri görüşme",
+      "date": "2026-11-09",
+      "start_time": "15:30",
+      "end_time": "16:00",
+      "location": "Zoom",
+      "attendees": ["Fatma Demir"],
+      "status": "confirmed",
+      "notes": "Teklif değerlendirme"
+    },
+    {
+      "id": "appt-003",
+      "title": "Mehmet Oktar — Toplantı (ERTELENMİŞ)",
+      "date": "2026-11-09",
+      "start_time": "10:00",
+      "end_time": "10:30",
+      "location": "Ofis",
+      "attendees": ["Mehmet Oktar"],
+      "status": "tentative",
+      "notes": "Toplantı ertelenme talep edildi — confirm needed"
+    },
+    {
+      "id": "appt-004",
+      "title": "Pazartesi toplantısı",
+      "date": "2026-11-10",
+      "start_time": "09:00",
+      "end_time": "09:30",
+      "location": "Ofis",
+      "attendees": ["Tüm takım"],
+      "status": "confirmed",
+      "notes": "Haftalık plan toplantısı"
+    }
+  ]
+}

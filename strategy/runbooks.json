@@ -170,6 +170,34 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "daily-ops",
+      "title": "Daily Operations — Master Agent",
+      "mode": "NEXUS-Full",
+      "duration": "Continuous",
+      "summary": "One command in, everything done — the Master Agent system routes phone commands to sub-agents, executes on computer, and learns from every task.",
+      "doc": "strategy/runbooks/scenario-daily-ops.md",
+      "roster": [
+        {
+          "group": "Master Agent",
+          "activation": "always",
+          "agents": [
+            "operations-master-agent"
+          ]
+        },
+        {
+          "group": "Operations Team",
+          "activation": "always",
+          "agents": [
+            "operations-email-ops-agent",
+            "operations-accounting-ops-agent",
+            "operations-sales-ops-agent",
+            "operations-appointment-ops-agent",
+            "operations-presentation-ops-agent"
+          ]
+        }
+      ]
     }
   ]
 }

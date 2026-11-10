@@ -1,0 +1,390 @@
+{
+  "_note": "The evolving skills database for the Master Agent system. This is a living data store — the Master Agent updates it after every completed task: success_count, last_used, improvements, and version bumps. New skills are born from recurring task patterns. Read by the Master Agent at session start; written after every task. This is how the system gets smarter with every interaction.",
+  "version": "1.0",
+  "updated": "2026-11-10",
+  "skills": [
+    {
+      "id": "email-reply",
+      "name": "E-posta Cevaplama",
+      "trigger": "when user asks to check/answer emails, or 'gelen mailleimi kontrol et', 'mailleri cevapla'",
+      "workflow": [
+        "read inbox",
+        "classify",
+        "draft reply in user's voice",
+        "verify facts",
+        "send",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "email-ops",
+      "success_count": 3,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "price-quote",
+      "name": "Fiyat Verme",
+      "trigger": "when user asks to give prices, or 'fiyat ver', 'fiyatlandır', 'fiyat isteyenlere fiyat ver'",
+      "workflow": [
+        "find price requesters in inbox",
+        "verify pricing",
+        "draft price reply",
+        "send",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "email-ops",
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "offer-intake",
+      "name": "Teklif Alma",
+      "trigger": "when user asks to receive/process offers, or 'teklif al', 'teklifleri kontrol et'",
+      "workflow": [
+        "find offer emails",
+        "extract key terms",
+        "summarize",
+        "route to department",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "email-ops",
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "accounting-check",
+      "name": "Muhasebe Belge Kontrolü",
+      "trigger": "when user asks to check accounting documents, or 'muhasebe evraklarını kontrol et'",
+      "workflow": [
+        "collect documents",
+        "verify amounts/dates/vendors",
+        "flag discrepancies",
+        "report status",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "accounting-ops",
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "monthly-statement",
+      "name": "Aylık Döküm Hazırlama",
+      "trigger": "when user asks for monthly statements, or 'aylık döküm hazırla', 'aylık rapor'",
+      "workflow": [
+        "compile income/expenses",
+        "reconcile with ledger",
+        "add variance summary",
+        "deliver statement",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "accounting-ops",
+      "success_count": 1,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "company-research",
+      "name": "Şirket Araştırma",
+      "trigger": "when user asks to find companies, or 'bu alanda şirketler bul', 'fırsat bul', 'potansiyel müşteri bul'",
+      "workflow": [
+        "research target area",
+        "identify companies",
+        "qualify fit",
+        "score hot/warm/cold",
+        "deliver list",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "sales-ops",
+      "success_count": 2,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "appointment-schedule",
+      "name": "Randevu Ayarlama",
+      "trigger": "when user asks to schedule appointments, or 'randevular ayarla', 'görüşme ayarla'",
+      "workflow": [
+        "check calendar for conflicts",
+        "coordinate with sales-ops",
+        "confirm appointment",
+        "send invite",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "appointment-ops",
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "appointment-check",
+      "name": "Randevu Kontrolü",
+      "trigger": "when user asks to check appointments, or 'bugünkü randevularıma bak', 'randevu kontrol et', 'bugün neler var'",
+      "workflow": [
+        "read today's appointments",
+        "flag conflicts",
+        "prepare briefing",
+        "deliver summary",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "appointment-ops",
+      "success_count": 3,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "appointment-organize",
+      "name": "Randevu Organize Etme",
+      "trigger": "when user asks to organize appointments, or 'randevu organize et', 'takvim düzenle', 'zamanlamayı organize et'",
+      "workflow": [
+        "review calendar",
+        "resolve conflicts",
+        "clean duplicates",
+        "send reminders",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "appointment-ops",
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "presentation-prep",
+      "name": "Sunum Hazırlama",
+      "trigger": "when user asks for presentations, or 'sunum dosyası hazırla', 'sunum yap', 'gösterim hazırla'",
+      "workflow": [
+        "gather data and context",
+        "structure narrative",
+        "build slide deck",
+        "verify data",
+        "deliver file",
+        "record"
+      ],
+      "department": "operations",
+      "sub_agent": "presentation-ops",
+      "success_count": 2,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-it-software",
+      "name": "IT & Software Profession Routing",
+      "trigger": "when user requests IT/software related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "it-master",
+      "success_count": 6,
+      "failure_count": 0,
+      "last_used": "2026-11-10",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-finance-accounting",
+      "name": "Finance & Accounting Profession Routing",
+      "trigger": "when user requests finance/accounting related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "finance-master",
+      "success_count": 2,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-healthcare-medical",
+      "name": "Healthcare & Medical Profession Routing",
+      "trigger": "when user requests healthcare/medical related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "healthcare-master",
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-legal-justice",
+      "name": "Legal & Justice Profession Routing",
+      "trigger": "when user requests legal/justice related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "legal-master",
+      "success_count": 4,
+      "failure_count": 0,
+      "last_used": "2026-11-10",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-education-training",
+      "name": "Education & Training Profession Routing",
+      "trigger": "when user requests education/training related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "education-master",
+      "success_count": 2,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-media-creative",
+      "name": "Media & Creative Profession Routing",
+      "trigger": "when user requests media/creative related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "media-master",
+      "success_count": 3,
+      "failure_count": 0,
+      "last_used": "2026-11-10",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-business-management",
+      "name": "Business & Management Profession Routing",
+      "trigger": "when user requests business/management related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "business-master",
+      "success_count": 2,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-engineering-technical",
+      "name": "Engineering & Technical Profession Routing",
+      "trigger": "when user requests engineering/technical related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "engineering-master",
+      "success_count": 3,
+      "failure_count": 0,
+      "last_used": "2026-11-10",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-research-science",
+      "name": "Research & Science Profession Routing",
+      "trigger": "when user requests research/science related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "research-master",
+      "success_count": 2,
+      "failure_count": 0,
+      "last_used": "2026-11-09",
+      "version": 1,
+      "improvements": []
+    },
+    {
+      "id": "profession-design-architecture",
+      "name": "Design & Architecture Profession Routing",
+      "trigger": "when user requests design/architecture related tasks",
+      "workflow": [
+        "identify profession category",
+        "route to category master agent",
+        "master spins up 5 helper agents",
+        "execute task",
+        "track result"
+      ],
+      "department": "operations",
+      "sub_agent": "design-master",
+      "success_count": 4,
+      "failure_count": 0,
+      "last_used": "2026-11-10",
+      "version": 1,
+      "improvements": []
+    }
+  ]
+}

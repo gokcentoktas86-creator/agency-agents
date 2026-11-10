@@ -1,0 +1,50 @@
+{
+  "_note": "Email inbox stub for the phone bridge. In production, this is replaced by a real email API (IMAP/Gmail/etc). The bridge reads this to simulate inbox triage. Each entry has: id, from, subject, body, received_at, status (unread/read/replied), type (pricing/offer/support/newsletter/spam/urgent).",
+  "inbox": [
+    {
+      "id": "email-001",
+      "from": "ahmet.yilmaz@example.com",
+      "subject": "Fiyat Isteği — 50 adet ofis malzemesi",
+      "body": "Merhaba, 50 adet ofis malzemesi için fiyat konusunda bilgi almak istiyorum. Teslimat süresi nedir?",
+      "received_at": "2026-11-09T08:15:00",
+      "status": "unread",
+      "type": "pricing"
+    },
+    {
+      "id": "email-002",
+      "from": "fatma.Demir@supplier.com",
+      "subject": "Teklif — Tedarik zinciri hizmeti",
+      "body": "Tedarik zinciri yönetim hizmeti için teklifimizi sunuyoruz. Aylık 3.500 TL + KDV. İletişime geçmekten mutlu oluruz.",
+      "received_at": "2026-11-09T09:02:00",
+      "status": "unread",
+      "type": "offer"
+    },
+    {
+      "id": "email-003",
+      "from": "support@example.com",
+      "subject": "Soru — Sipariş takip",
+      "body": "Sipariş numaram 12345 ile ilgili durum nedir? Teslimat bu hafta olacak mı?",
+      "received_at": "2026-11-09T10:30:00",
+      "status": "unread",
+      "type": "support"
+    },
+    {
+      "id": "email-004",
+      "from": "info@newsletter.com",
+      "subject": " haftalık bülten",
+      "body": "Bu haftanın öne çıkanları... [bülten içeriği]",
+      "received_at": "2026-11-09T06:00:00",
+      "status": "unread",
+      "type": "newsletter"
+    },
+    {
+      "id": "email-005",
+      "from": "mehmet.oktar@bigcorp.com",
+      "subject": "Urgent — Toplantı ertelenmesi",
+      "body": "Bugünkü toplantı saat 14:00'de ertelenmelidir. Acil olarak sonuç bekliyorum.",
+      "received_at": "2026-11-09T11:45:00",
+      "status": "unread",
+      "type": "urgent"
+    }
+  ]
+}
